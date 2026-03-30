@@ -6,7 +6,7 @@ compatibility_date = "2024-01-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "affiliatetrack-db"
-database_id = "placeholder-will-be-updated"
+database_id = "24402f50-3e13-4e2e-bf48-c902921bd13f"
 
 # Durable Objects 绑定
 [[durable_objects.bindings]]
@@ -21,10 +21,10 @@ class_name = "StatsAggregator"
 name = "TRAFFIC_ROUTER"
 class_name = "TrafficRouter"
 
-# Durable Objects 迁移
+# Durable Objects 迁移 (使用 sqlite 类以支持免费计划)
 [[migrations]]
 tag = "v1"
-new_classes = ["SessionManager", "StatsAggregator", "TrafficRouter"]
+new_sqlite_classes = ["SessionManager", "StatsAggregator", "TrafficRouter"]
 
 # 环境变量
 [vars]
