@@ -1,0 +1,70 @@
+# CloudAffiliate Tracker
+# 忽略不必要的文件
+
+# 依赖
+node_modules/
+.pnpm-store/
+package-lock.json
+yarn.lock
+
+# 构建输出
+dist/
+build/
+.wrangler/
+.output/
+
+# 环境变量（包含敏感信息）
+.env
+.env.local
+.env.*.local
+
+# 日志
+*.log
+logs/
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# 测试覆盖率
+coverage/
+.nyc_output/
+
+# 临时文件
+tmp/
+temp/
+*.tmp
+
+# 大型资源文件（如有）
+*.mp4
+*.mov
+*.avi
+*.zip
+*.tar.gz
+
+# 本地数据库
+*.sqlite
+*.sqlite3
+*.db
+
+# 缓存
+.cache/
+*.cache
+
+# 不需要提交的文档（保留核心文档）
+# 注意：核心文档在docs/目录中已保留
+*.drawio.bkp
+
+# Playwright
+playwright-report/
+test-results/
+
+# TypeScript
+*.tsbuildinfo
